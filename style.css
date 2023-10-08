@@ -1,0 +1,58 @@
+/* Reset CSS for basic element styles */
+body, h1, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FEEFF1;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Typography styles */
+h1, h3 {
+  font-family: 'Georgia', serif;
+}
+
+/* Book container styles */
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* Book card styles */
+.book {
+  margin: 20px;
+  border: 1px solid #ddd;
+  padding: 1rem; /* Increased padding for more text space */
+  border-radius: 8px; /* Less rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  flex: 0 0 calc(33.33% - 40px); /* Adjusted width to accommodate more columns on the screen */
+  box-sizing: border-box;
+  height: 400px; /* Increased height to accommodate more text */
+  overflow: hidden;
+}
+
+/* Book image styles */
+.book img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Book title styles */
+.book h3 {
+  margin-top: 0.5rem; /* Reduced margin to increase text space */
+}
